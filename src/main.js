@@ -1,4 +1,9 @@
 import update from './update.js';
-import { newEngine } from "@comunica/actor-init-sparql";
+import {Quadstore} from 'quadstore'
+
+/*const opts = {
+}
+
+const store = new Quadstore(opts);*/
 
 update();
