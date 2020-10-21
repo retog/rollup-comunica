@@ -19,7 +19,9 @@ export default {
 		builtins(),
 		json(),
 		resolve(), // tells Rollup how to find date-fns in node_modules
-		commonjs(), // converts date-fns to ES modules
+		commonjs({
+      ignore: id => id.startsWith('_webpack_ignored_')
+    }),
 		production && terser() // minify, but only in production
 	]
 };

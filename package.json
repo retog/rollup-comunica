@@ -10,9 +10,10 @@
     "serve": "^11.3.2"
   },
   "dependencies": {
+    "@comunica/actor-init-sparql": "^1.17.0",
     "@rollup/plugin-json": "^4.1.0",
     "date-fns": "^2.16.1",
-    "quadstore": "v7.0.1-alpha.9"
+    "quadstore": "v7.0.1-alpha.11"
   },
   "scripts": {
     "build": "rollup -c",
